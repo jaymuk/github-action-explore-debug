@@ -1,0 +1,11 @@
+name: Explore Debug
+description: Show data available in Action runs
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  jq_selector:
+    description: 'JQ selector (what to extract from JSON obj)'
+    required: false
+    default: '.'
+
